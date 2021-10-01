@@ -10,7 +10,7 @@ function oneClick(e) {
     if (emailInput.value === '' || !reg.test(emailInput.value)) {
         msg.classList.add('error');
         msg.innerHTML = 'Oops! Please check your email';
-        setTimeout(() => msg.remove(), 3000);
+        setTimeout(() => msg.classList.remove('error'), 3000);
     } else {
         msg2.classList.add('goodMail');
         msg2.innerHTML = 'Successful!';    
